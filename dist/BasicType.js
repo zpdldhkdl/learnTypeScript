@@ -1,0 +1,12 @@
+"use strict";
+let count = 0;
+count += 1;
+const message = 'hello world';
+const done = true;
+const numbers = [1, 2, 3];
+const messages = ['hello', 'world'];
+let mightBeUndefined = undefined;
+let nullAbleNumber = null;
+let color = 'red';
+color = 'yellow';
+color = 'orange';
