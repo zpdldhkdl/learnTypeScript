@@ -88,6 +88,7 @@ class Stack<T> {
 
 const stack = new Stack<number>();
 
+console.log(stack.isEmpty());
 stack.push(1);
 stack.push(2);
 stack.push(3);
