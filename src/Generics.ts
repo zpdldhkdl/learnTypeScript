@@ -58,3 +58,39 @@ console.log(queue.dequeue());
 console.log(queue.dequeue());
 console.log(queue.dequeue());
 console.log(queue.dequeue());
+
+class Stack<T> {
+    stack: T[] = [];
+
+    push(item: T) {
+        this.stack.push(item);
+    }
+
+    pop(): T {
+        if (this.stack.length === 0)
+            throw new Error(`stack is empty`);
+
+        const top = this.stack[this.stack.length - 1];
+
+        this.stack.pop();
+
+        return top;
+    }
+
+    peek(): T {
+        return this.stack[this.stack.length - 1];
+    }
+
+    isEmpty(): boolean {
+        return this.stack.length === 0;
+    }
+}
+
+const stack = new Stack<number>();
+
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.push(4);
+console.log(stack.peek());
+console.log(stack.isEmpty());
